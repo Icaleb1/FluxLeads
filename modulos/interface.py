@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import filedialog, simpledialog, messagebox
 import difflib
 import sys
-from modulos.manipularArquivos import encontrar_coluna, resetar_status_envio, adicionar_coluna_envio, verificar_numeros_enviados
+from modulos.manipularArquivos import *
 
 root = tk.Tk()
 root.withdraw()

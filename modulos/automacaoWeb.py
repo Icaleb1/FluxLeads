@@ -14,7 +14,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from modulos.interface import reiniciar_envios
-from modulos.manipularArquivos import adicionar_coluna_envio, encontrar_coluna
+from modulos.manipularArquivos import *
 
 
 def normalizar_telefone(telefone):
@@ -32,29 +32,21 @@ def normalizar_telefone(telefone):
 def enviar_anexo(navegador, telefone, anexo):
     intervaloAleatorio = random.uniform(20, 30)
     try:
-        # Abrir a conversa com o telefone do cliente
         link_mensagem_whats = f'https://web.whatsapp.com/send?phone={telefone}'
         navegador.get(link_mensagem_whats)
 
-        # Aguarda a página do WhatsApp carregar
-        #Funcional!!!
         WebDriverWait(navegador, 25).until(
             EC.presence_of_element_located((By.ID, 'side'))   
         )
     
-        # Clicar no ícone de anexar
-        #Funcional!!!
         anexar_icone = WebDriverWait(navegador, 25).until(
             EC.element_to_be_clickable((By.XPATH, "//div[@title='Anexar']"))
         )
         anexar_icone.click()
 
-
-        # Selecionar o input de arquivo e enviar o anexo
         anexar_documento = navegador.find_element(By.XPATH, "//input[@accept='*']")
         anexar_documento.send_keys(anexo)
 
-        # Clicar no botão de enviar
         sleep(intervaloAleatorio)
         botao_enviar = WebDriverWait(navegador, 15).until(
             EC.element_to_be_clickable((By.XPATH, "//span[@data-icon='send']"))
@@ -88,7 +80,7 @@ def processar_clientes(navegador, mensagens, pagina_clientes, workbook, file_pat
     red_fill = PatternFill(start_color='FF0000', end_color='FF0000', fill_type='solid')
     intervaloAleatorio = random.uniform(20, 35)
 
-    coluna_envio = encontrar_coluna("Enviado", pagina_clientes)
+    coluna_envio = encontrar_coluna_enviados("Enviado", pagina_clientes)
     if coluna_envio is None:
         coluna_envio = adicionar_coluna_envio(pagina_clientes)
 
@@ -104,9 +96,12 @@ def processar_clientes(navegador, mensagens, pagina_clientes, workbook, file_pat
             logging.error(f"Linha com dados insuficientes: {linha}")
             continue
 
-        matricula = linha[0].value  
-        nome = linha[1].value
-        telefone = linha[2].value
+        column_tel = encontrar_coluna_telefones(pagina_clientes)
+        column_nome = encontrar_coluna_nomes(pagina_clientes)
+
+        nome = linha[column_nome].value
+        telefone = linha[column_tel].value
+        
 
         status_envio = linha[coluna_envio - 1].value 
         if status_envio == "Sucesso":

@@ -148,3 +148,29 @@ Stacktrace:
 	BaseThreadInitThunk [0x00007FF92CF2257D+29]
 	RtlUserThreadStart [0x00007FF92F06AF08+40]
 
+2024-11-03 23:52:23,354 - ERROR - Erro ao processar cliente caguei (86878768686868): Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main"]/footer/div[1]/div/span/div/div[2]/div[1]/div/div[1]/p"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EEE93AF5+28005]
+	(No symbol) [0x00007FF6EEDF83F0]
+	(No symbol) [0x00007FF6EEC9580A]
+	(No symbol) [0x00007FF6EECE5A3E]
+	(No symbol) [0x00007FF6EECE5D2C]
+	(No symbol) [0x00007FF6EED2EA97]
+	(No symbol) [0x00007FF6EED0BA7F]
+	(No symbol) [0x00007FF6EED2B8B3]
+	(No symbol) [0x00007FF6EED0B7E3]
+	(No symbol) [0x00007FF6EECD75C8]
+	(No symbol) [0x00007FF6EECD8731]
+	GetHandleVerifier [0x00007FF6EF18646D+3118813]
+	GetHandleVerifier [0x00007FF6EF1D6CC0+3448624]
+	GetHandleVerifier [0x00007FF6EF1CCF3D+3408301]
+	GetHandleVerifier [0x00007FF6EEF5A44B+841403]
+	(No symbol) [0x00007FF6EEE0344F]
+	(No symbol) [0x00007FF6EEDFF4C4]
+	(No symbol) [0x00007FF6EEDFF65D]
+	(No symbol) [0x00007FF6EEDEEBB9]
+	BaseThreadInitThunk [0x00007FFC02A5257D+29]
+	RtlUserThreadStart [0x00007FFC04A4AF08+40]
+
+2024-11-03 23:56:40,953 - ERROR - Erro ao tentar fechar o navegador: invalid command name ".!ctktextbox.!text"

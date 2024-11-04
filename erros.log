@@ -184,3 +184,32 @@ Stacktrace:
 	BaseThreadInitThunk [0x00007FF92CF2257D+29]
 	RtlUserThreadStart [0x00007FF92F06AF08+40]
 
+2024-11-03 22:56:07,671 - ERROR - Erro ao processar cliente CALEB (48991762810): HTTPConnectionPool(host='localhost', port=49847): Max retries exceeded with url: /session/a311e5513ef6120bf54a15ada7bbf043/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D43CCE6A10>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+2024-11-03 23:00:59,390 - ERROR - Erro ao processar cliente caguei (86878768686868): Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main"]/footer/div[1]/div/span/div/div[2]/div[1]/div/div[1]/p"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6ABEC3AF5+28005]
+	(No symbol) [0x00007FF6ABE283F0]
+	(No symbol) [0x00007FF6ABCC580A]
+	(No symbol) [0x00007FF6ABD15A3E]
+	(No symbol) [0x00007FF6ABD15D2C]
+	(No symbol) [0x00007FF6ABD5EA97]
+	(No symbol) [0x00007FF6ABD3BA7F]
+	(No symbol) [0x00007FF6ABD5B8B3]
+	(No symbol) [0x00007FF6ABD3B7E3]
+	(No symbol) [0x00007FF6ABD075C8]
+	(No symbol) [0x00007FF6ABD08731]
+	GetHandleVerifier [0x00007FF6AC1B646D+3118813]
+	GetHandleVerifier [0x00007FF6AC206CC0+3448624]
+	GetHandleVerifier [0x00007FF6AC1FCF3D+3408301]
+	GetHandleVerifier [0x00007FF6ABF8A44B+841403]
+	(No symbol) [0x00007FF6ABE3344F]
+	(No symbol) [0x00007FF6ABE2F4C4]
+	(No symbol) [0x00007FF6ABE2F65D]
+	(No symbol) [0x00007FF6ABE1EBB9]
+	BaseThreadInitThunk [0x00007FFC02A5257D+29]
+	RtlUserThreadStart [0x00007FFC04A4AF08+40]
+
+2024-11-03 23:06:27,445 - ERROR - Erro na função principal: tuple indices must be integers or slices, not NoneType
+2024-11-03 23:13:38,146 - ERROR - Erro na função principal: tuple indices must be integers or slices, not NoneType
+2024-11-03 23:17:08,335 - ERROR - Erro na função principal: tuple indices must be integers or slices, not NoneType

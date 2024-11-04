@@ -176,7 +176,7 @@ class App(ctk.CTk):
         frame.place(x=0, y=10)
         
 
-        title = ctk.CTkLabel(frame, text='FlashLeads - Automação de processos', 
+        title = ctk.CTkLabel(frame, text='FLuxLeads - Automação de processos', 
         font=('Century Gothic bold', 24),
         text_color='#fff')
         title.place(x=200, y=10)
