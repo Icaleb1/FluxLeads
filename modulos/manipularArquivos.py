@@ -43,7 +43,6 @@ def resetar_status_envio(pagina_clientes, coluna_envio):
         for linha in pagina_clientes.iter_rows(min_row=2):
             linha[coluna_envio - 1].value = None
 
-
 def verificar_numeros_enviados(pagina_clientes, coluna_envio):
     if coluna_envio is None:
        coluna_envio = adicionar_coluna_envio(pagina_clientes)
@@ -56,3 +55,11 @@ def verificar_numeros_enviados(pagina_clientes, coluna_envio):
             break  
 
     return ja_enviados, None  
+
+def verificar_arquivo_aberto(file_path):
+    try:
+        with open(file_path, 'a'):
+            return False
+    except IOError:
+        return True
+

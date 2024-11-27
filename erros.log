@@ -213,3 +213,30 @@ Stacktrace:
 2024-11-03 23:06:27,445 - ERROR - Erro na função principal: tuple indices must be integers or slices, not NoneType
 2024-11-03 23:13:38,146 - ERROR - Erro na função principal: tuple indices must be integers or slices, not NoneType
 2024-11-03 23:17:08,335 - ERROR - Erro na função principal: tuple indices must be integers or slices, not NoneType
+2024-11-26 23:25:39,918 - ERROR - Erro ao processar cliente caguei (86878768686868): Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main"]/footer/div[1]/div/span/div/div[2]/div[1]/div/div[1]/p"}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B0326CB5+28821]
+	(No symbol) [0x00007FF6B0293840]
+	(No symbol) [0x00007FF6B013578A]
+	(No symbol) [0x00007FF6B01891BE]
+	(No symbol) [0x00007FF6B01894AC]
+	(No symbol) [0x00007FF6B01D2647]
+	(No symbol) [0x00007FF6B01AF33F]
+	(No symbol) [0x00007FF6B01CF412]
+	(No symbol) [0x00007FF6B01AF0A3]
+	(No symbol) [0x00007FF6B017A778]
+	(No symbol) [0x00007FF6B017B8E1]
+	GetHandleVerifier [0x00007FF6B065FCAD+3408013]
+	GetHandleVerifier [0x00007FF6B067741F+3504127]
+	GetHandleVerifier [0x00007FF6B066B5FD+3455453]
+	GetHandleVerifier [0x00007FF6B03EBDBB+835995]
+	(No symbol) [0x00007FF6B029EB5F]
+	(No symbol) [0x00007FF6B029A814]
+	(No symbol) [0x00007FF6B029A9AD]
+	(No symbol) [0x00007FF6B028A199]
+	BaseThreadInitThunk [0x00007FFDB0DD259D+29]
+	RtlUserThreadStart [0x00007FFDB22AAF38+40]
+
+2024-11-26 23:41:26,971 - ERROR - Erro na função principal: [Errno 13] Permission denied: 'C:/Users/Caleb/Downloads/clientes(teste).xlsx'
+2024-11-26 23:46:38,345 - ERROR - Erro na função principal: [Errno 13] Permission denied: 'C:/Users/Caleb/Downloads/clientes(teste).xlsx'

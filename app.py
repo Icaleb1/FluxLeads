@@ -79,10 +79,10 @@ class App(ctk.CTk):
                     self.anexo_nome.set(pathlib.Path(arquivo_anexo).name)
 
         def adicionar_mensagem():
-            self.mensagem = self.entrada_mensagem.get("1.0", END).strip()  # Pega o texto da primeira linha até o final e remove espaços
-            if self.mensagem:  # Verifica se a mensagem não está vazia
+            self.mensagem = self.entrada_mensagem.get("1.0", END).strip()  
+            if self.mensagem:  
                 self.lista_mensagens.append(self.mensagem)
-                self.entrada_mensagem.delete("1.0", END)  # Limpa a caixa de texto após adicionar a mensagem
+                self.entrada_mensagem.delete("1.0", END)  
                 messagebox.showinfo('Sucesso', 'Mensagem adicionada com sucesso!')
                 atualizar_mensagem()
             else:
@@ -159,16 +159,16 @@ class App(ctk.CTk):
                     pass
 
         def limpar_formulario():
-            self.entrada_mensagem.delete("1.0", END)  # Limpa o campo de mensagem
-            self.lista_mensagens = []  # Limpa a lista de mensagens
-            self.mensagens_combobox.set('Selecione uma mensagem')  # Reseta o ComboBox de mensagens
-            paginas_combobox.set('Página não selecionada')  # Reseta o ComboBox de páginas
-            self.arquivo_excel = None  # Reseta o arquivo Excel
-            self.arquivo_anexo = None  # Reseta o arquivo anexo
-            self.arquivo_excel_nome.set('Nenhum arquivo selecionado')  # Reseta o nome do arquivo Excel
-            self.anexo_nome.set('Nenhum anexo selecionado')  # Reseta o nome do anexo
+            self.entrada_mensagem.delete("1.0", END)  
+            self.lista_mensagens = []  
+            self.mensagens_combobox.set('Selecione uma mensagem')  
+            paginas_combobox.set('Página não selecionada') 
+            self.arquivo_excel = None  
+            self.arquivo_anexo = None  
+            self.arquivo_excel_nome.set('Nenhum arquivo selecionado')  
+            self.anexo_nome.set('Nenhum anexo selecionado')  
 
-            messagebox.showinfo('Sucesso', 'Formulário limpo com sucesso!')  # Mostra uma mensagem informando que o formulário foi limpo
+            messagebox.showinfo('Sucesso', 'Formulário limpo com sucesso!')  
 
 
         frame = (ctk.CTkFrame(self, width=800, height=50, corner_radius=0,

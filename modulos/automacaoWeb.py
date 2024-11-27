@@ -76,6 +76,11 @@ def inicializar_navegador():
     return navegador
 
 def processar_clientes(navegador, mensagens, pagina_clientes, workbook, file_path, anexo):
+
+    if(verificar_arquivo_aberto(file_path)):
+        messagebox.showwarning('Sistema','O excel não pode estar aberto!')
+        return 
+
     green_fill = PatternFill(start_color='00FF00', end_color='00FF00', fill_type='solid')
     red_fill = PatternFill(start_color='FF0000', end_color='FF0000', fill_type='solid')
     intervaloAleatorio = random.uniform(20, 35)
