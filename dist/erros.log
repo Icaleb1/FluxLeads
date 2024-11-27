@@ -199,3 +199,5 @@ Stacktrace:
 	BaseThreadInitThunk [0x00007FFC70A9257D+29]
 	RtlUserThreadStart [0x00007FFC714CAF08+40]
 
+2024-11-27 00:02:09,565 - ERROR - Erro na função principal: [Errno 13] Permission denied: 'C:/Users/Caleb/Downloads/clientes(teste).xlsx'
+2024-11-27 00:03:18,064 - ERROR - Erro na função principal: [Errno 13] Permission denied: 'C:/Users/Caleb/Downloads/clientes(teste).xlsx'

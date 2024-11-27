@@ -240,3 +240,28 @@ Stacktrace:
 
 2024-11-26 23:41:26,971 - ERROR - Erro na função principal: [Errno 13] Permission denied: 'C:/Users/Caleb/Downloads/clientes(teste).xlsx'
 2024-11-26 23:46:38,345 - ERROR - Erro na função principal: [Errno 13] Permission denied: 'C:/Users/Caleb/Downloads/clientes(teste).xlsx'
+2024-11-26 23:54:49,049 - ERROR - Erro ao processar cliente caguei (86878768686868): Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main"]/footer/div[1]/div/span/div/div[2]/div[1]/div/div[1]/p"}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D1516CB5+28821]
+	(No symbol) [0x00007FF6D1483840]
+	(No symbol) [0x00007FF6D132578A]
+	(No symbol) [0x00007FF6D13791BE]
+	(No symbol) [0x00007FF6D13794AC]
+	(No symbol) [0x00007FF6D13C2647]
+	(No symbol) [0x00007FF6D139F33F]
+	(No symbol) [0x00007FF6D13BF412]
+	(No symbol) [0x00007FF6D139F0A3]
+	(No symbol) [0x00007FF6D136A778]
+	(No symbol) [0x00007FF6D136B8E1]
+	GetHandleVerifier [0x00007FF6D184FCAD+3408013]
+	GetHandleVerifier [0x00007FF6D186741F+3504127]
+	GetHandleVerifier [0x00007FF6D185B5FD+3455453]
+	GetHandleVerifier [0x00007FF6D15DBDBB+835995]
+	(No symbol) [0x00007FF6D148EB5F]
+	(No symbol) [0x00007FF6D148A814]
+	(No symbol) [0x00007FF6D148A9AD]
+	(No symbol) [0x00007FF6D147A199]
+	BaseThreadInitThunk [0x00007FFDB0DD259D+29]
+	RtlUserThreadStart [0x00007FFDB22AAF38+40]
+
